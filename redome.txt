@@ -1,0 +1,14 @@
+python 3.11 をインストール
+
+-- pythonインストール後
+> pip install vosk
+
+参考：https://alphacephei.com/vosk/install
+
+> pip install fastapi
+> pip install uvicorn
+> pip install python-multipart
+
+> Main.bat
+-- apiサーバーと入力フォームが起動
+-- api仕様書：http://localhost:8000/docs
