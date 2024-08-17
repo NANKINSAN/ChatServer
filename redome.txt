@@ -1,5 +1,6 @@
 python 3.11 をインストール
 
+pip install --upgrade pip
 -- pythonインストール後
 > pip install vosk
 
@@ -9,6 +10,9 @@ python 3.11 をインストール
 > pip install uvicorn
 > pip install python-multipart
 
-> Main.bat
--- apiサーバーと入力フォームが起動
 -- api仕様書：http://localhost:8000/docs
+
+モデルは別途ダウンロードし、パスを指定してロードする
+コード例
+PATH="./モデルがあるフォルダ"
+model = Model(model_path=PATH)

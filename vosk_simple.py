@@ -8,7 +8,7 @@ import json
 
 # You can set log level to -1 to disable debug messages
 SetLogLevel(0)
-
+MODEL_PATH="./vosk-model-ja-0.22"
 # wf = wave.open(sys.argv[1], "rb")
 
 class MyVosk():
@@ -18,7 +18,8 @@ class MyVosk():
             print("Audio file must be WAV format mono PCM.")
             sys.exit(1)
 
-        model = Model(lang="ja")
+        # model = Model(lang="ja")
+        model = Model(model_path=MODEL_PATH)
 
         # You can also init model by name or with a folder path
         # model = Model(model_name="vosk-model-en-us-0.21")
